@@ -17,7 +17,6 @@ export default function handler(lambda: (arg0: any, arg1: any) => any) {
       body: JSON.stringify(body),
       headers: {
         'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Credentials': true,
       },
     };
   };
