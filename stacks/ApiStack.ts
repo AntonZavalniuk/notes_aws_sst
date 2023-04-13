@@ -15,6 +15,7 @@ export function ApiStack({ stack, app }: ApiStackProps) {
         bind: [table],
       },
     },
+    cors: true,
     routes: {
       'GET /notes': 'packages/functions/src/list.main',
       'POST /notes': 'packages/functions/src/create.main',
